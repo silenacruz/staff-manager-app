@@ -91,7 +91,8 @@ button:active { transform: translateY(2px); box-shadow: 0 0px 0 var(--border-col
 
 .main-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
   padding-bottom: 15px;
@@ -112,7 +113,7 @@ button:active { transform: translateY(2px); box-shadow: 0 0px 0 var(--border-col
 .btn-mini.active { background: var(--bg-yellow) !important; }
 
 /* TABS */
-.tabs { display: flex; gap: 10px; margin-bottom: 20px; }
+.tabs { display: flex; gap: 10px; margin-bottom: 20px; justify-content: flex-end; }
 .tabs button { background: white; color: var(--border-color); flex: 1; box-shadow: 0 3px 0 var(--border-color); }
 .tabs button.active { background: var(--bg-yellow); }
 
@@ -192,4 +193,64 @@ button:active { transform: translateY(2px); box-shadow: 0 0px 0 var(--border-col
 /* Ajuste para que los botones de las pestañas no se desborden */
 .tabs button {
   width: 100%;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 12px; /* Espacio entre botones */
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.tab-button-container {
+  flex: 1; /* Esto iguala el tamaño de todos los botones */
+  position: relative;
+  display: flex;
+}
+
+.tabs button {
+  width: 100%;
+  padding: 12px 5px;
+  background: white;
+  border: 3px solid var(--border-color);
+  border-radius: 12px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  color: var(--border-color);
+  cursor: pointer;
+  box-shadow: 0 4px 0 var(--border-color);
+  transition: all 0.1s;
+  text-align: center;
+}
+
+.tabs button.active {
+  background: var(--bg-yellow);
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 var(--border-color);
+}
+
+.notification-badge {
+  position: absolute;
+  top: -8px;
+  right: -5px;
+  background: #ff6b6b;
+  color: white;
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  z-index: 10;
+  pointer-events: none; /* Para que no estorbe al hacer click */
 }
