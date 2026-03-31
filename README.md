@@ -1,16 +1,32 @@
-# React + Vite
+# 👥 Staff Manager App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Licencia](https://img.shields.io/badge/license-MIT-blue.svg)
+![NodeJS](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
 
-Currently, two official plugins are available:
+**Staff Manager App** es una solución integral para la gestión administrativa de personal. Diseñada para optimizar la organización de equipos, permitiendo el control de altas, bajas y perfiles de empleados de manera intuitiva y eficiente.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Características Principales
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Gestión de Empleados:** CRUD completo (Crear, Leer, Actualizar, Eliminar) de registros de staff.
+* **Arquitectura Escalable:** Separación clara de responsabilidades para facilitar el mantenimiento y la escalabilidad.
+* **Persistencia de Datos:** Integración con MongoDB para un manejo de datos flexible.
+* **Interfaz Responsiva:** Interfaz adaptable a diferentes dispositivos para una gestión móvil efectiva.
 
-## Expanding the ESLint configuration
+## 🛠️ Stack Tecnológico
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Backend:** Node.js, Express.js.
+* **Base de Datos:** MongoDB (Mongoose ODM).
+* **Frontend:** HTML5, CSS3, JavaScript, React.
+* **Herramientas:** Git, npm.
+
+## 📦 Instalación y Configuración
+
+Sigue estos pasos para ejecutar el proyecto localmente:
+
+1. **Clona el repositorio:**
+   ```bash
+   git clone [https://github.com/silenacruz/staff-manager-app.git](https://github.com/silenacruz/staff-manager-app.git)
